@@ -11,6 +11,12 @@ main{
     width: 100%;
     height: 100%;
 }
+.BGImg{
+    background-image: url("https://cdn.discordapp.com/attachments/644203072255688705/972174893728800840/unityBanner.jpg");
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
+}
 
 /* Menu field*/
 .menu{
@@ -41,7 +47,7 @@ main{
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.menu p:nth-child(7){
+.menu p:nth-child(4){
     text-decoration: underline;
     color: #fff;
     font-size: 18px;
@@ -74,6 +80,7 @@ main{
     padding: 10px;
     background-color: black;
 }
+
 #profilePic{
     width: 250px;
     height: 300px;

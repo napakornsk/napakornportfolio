@@ -40,7 +40,7 @@ main{
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.menu p:nth-child(7){
+.menu p:nth-child(4){
     text-decoration: underline;
     color: #fff;
     font-size: 18px;
@@ -146,4 +146,10 @@ th{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+.BGImg{
+    background-image: url("https://cdn.discordapp.com/attachments/644203072255688705/972174893728800840/unityBanner.jpg");
+    background-size: cover;
+    opacity: 1;
+    background-repeat: no-repeat;
 }
