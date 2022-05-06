@@ -120,14 +120,17 @@ th{
     padding: 10px 20px 10px 0;
     
 }
+/* Responsive design */
 .CertificateImg img{
     padding: 10px 10px 10px 10px;
-    
+    width: 100%;
+    height: auto;
 }
 .JobImg{
     display: flex;
     flex-wrap: wrap;
 }
+/* End Responsive design */
 .JobImg img{
     width: 415px;
     height: 300px;
