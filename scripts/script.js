@@ -1,3 +1,4 @@
+// Get id from HTML and declares variables
 var character = document.getElementById(`character`);
 var game = document.getElementById(`game`);
 var interval;
@@ -5,6 +6,7 @@ var both = 0;
 var counter = 0;
 var currentBlocks = [];
 
+// Move left and right function
 function moveLeft(){
     var left = parseInt(window.getComputedStyle(character).getPropertyValue(`left`));
     if(left>0){
@@ -17,6 +19,7 @@ function moveRight(){
         character.style.left = left + 2 + `px`;
     }
 }
+// Get input from player
 document.addEventListener(`keydown`, event => {
     if(both==0){
         both++;
@@ -28,11 +31,12 @@ document.addEventListener(`keydown`, event => {
         }
     }
 });
+// Preventing bug from input 2 keys in the same time
 document.addEventListener(`keyup`, event => {
     clearInterval(interval);
     both=0;
 });
-
+// Game function
 var blocks = setInterval(function(){
     var blockLast = document.getElementById(`block`+(counter-1));
     var holeLast = document.getElementById(`hole`+(counter-1));
@@ -49,6 +53,7 @@ var blocks = setInterval(function(){
         hole.setAttribute(`id`, `hole`+counter);
         block.style.top = blockLastTop + 100 + `px`;
         hole.style.top = holeLastTop + 100 + `px`;
+        // Make hole spawn in randomly position
         var random = Math.floor(Math.random() * 360);
         hole.style.left = random + `px`;
         game.appendChild(block);

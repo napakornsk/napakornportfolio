@@ -251,3 +251,17 @@ ul li{
     margin-top: -20px;
 }
 /* End Game design */
+
+/* Credit zone */
+.CreditZone{
+    display: block;
+    padding: 20px 0px 20px 0px;
+}
+.CreditZone > h2{
+    width: 100%;
+    margin-left: 0px;
+}
+.CreditZone > ol{
+    padding-left: 20px;
+}
+/* End Credit zone */
