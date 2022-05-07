@@ -12,43 +12,41 @@ main{
     height: 100%;
 }
 /* Menu field*/
-.menu{
-    width: 100%;
+nav{
+    position: fixed;
+    width: 20%;
     height: 100%;
     background-color: #121227;
 }
-#logo{
+nav #logo{
     color: #fff;
     font-size: 30px;
     letter-spacing: 4px;
     padding: 15px;
     background-color: #000;
 }
-.menu a{
+nav a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     letter-spacing: 2px;
     display: list-item;
+    overflow-wrap: break-word;
     padding: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
-.menu a:hover{
-    background-color: red;
+nav a:hover{
+    background-color: rgb(48, 97, 187);
     transition: 0.5s;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
-.menu p:nth-child(4){
+nav p:nth-child(4){
     text-decoration: underline;
     color: #fff;
     font-size: 18px;
     letter-spacing: 2px;
     display: list-item;
     padding: 20px;
-    border-top: 20px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 /* End Menu field*/
 

@@ -40,8 +40,6 @@ nav a{
     display: list-item;
     overflow-wrap: break-word;
     padding: 20px;
-    border-top: 1px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 nav a:hover{
     background-color: rgb(48, 97, 187);
@@ -56,8 +54,6 @@ nav p:nth-child(4){
     letter-spacing: 2px;
     display: list-item;
     padding: 20px;
-    border-top: 20px solid rgba(0, 0, 0, 0);
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 /* End Menu field*/
 
@@ -213,4 +209,45 @@ ul li{
         flex-wrap: wrap;
     }
 }
+@media only screen and (max-width: 1790px){
+    .ProjectHolder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 /* End Responsive design */
+
+/* Game design here */
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: relative;
+    top: 440px;
+    left: 190px;
+    z-index: 1000000;
+}
+.block{
+    width: 400px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+/* End Game design */
